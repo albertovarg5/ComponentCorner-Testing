@@ -1,0 +1,36 @@
+#root {
+  min-height: 100vh;
+}
+
+.products-section {
+  padding: 50px 8%;
+  background-color: #f3f4f6;
+}
+
+.products-section > h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #111827;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
+}
